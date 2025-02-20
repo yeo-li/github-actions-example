@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # 저장소 코드 다운로드
+        uses: actions/checkout@v4  # 저장소 코드 다운로드
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '17'  # 사용할 JDK 버전
           distribution: ''
@@ -29,7 +29,7 @@ jobs:
         run: ./gradlew test  # 테스트 실행
 
       - name: Upload test results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: build/test-results/test/  # 테스트 결과를 업로드
