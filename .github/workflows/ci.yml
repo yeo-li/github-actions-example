@@ -33,3 +33,4 @@ jobs:
         with:
           name: test-results
           path: build/test-results/test/  # 테스트 결과를 업로드
+          distribution: true
