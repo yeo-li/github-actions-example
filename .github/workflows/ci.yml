@@ -19,7 +19,7 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          distribution: 'adoptopenjdk'  # 올바른 배포판 이름
+          distribution: 'openjdk'  # 올바른 배포판 이름
           java-version: '17'  # 사용할 JDK 버전
 
       - name: Build with Gradle
